@@ -2,13 +2,10 @@ import java.util.Scanner;
 
 public class GettingInputs {
     public static void main(String[] args) {
-        // Create a Scanner object for user input
         Scanner scanner = new Scanner(System.in);
-
-        // Prompting the user for input
         System.out.print("Enter the year (Integer): ");
         int year = scanner.nextInt();
-        scanner.nextLine();  // Consume the newline character
+        scanner.nextLine();  
 
         System.out.print("Enter the genre (String): ");
         String genre = scanner.nextLine();
@@ -22,7 +19,6 @@ public class GettingInputs {
         System.out.print("Enter the artist name (String): ");
         String artist = scanner.nextLine();
 
-        // Printing the entered values
         System.out.println("\nEntered Values:");
         System.out.println("Year: " + year);
         System.out.println("Genre: " + genre);
@@ -30,7 +26,6 @@ public class GettingInputs {
         System.out.println("Title: " + title);
         System.out.println("Artist: " + artist);
 
-        // Close the scanner
         scanner.close();
     }
 }
